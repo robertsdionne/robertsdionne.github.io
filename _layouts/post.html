@@ -4,6 +4,20 @@ layout: default
 <div class="post">
 
   <header class="post-header">
+    <!-- Pagination links -->
+    <div class="pagination">
+      {% if page.next.url %}
+        <a href="{{ page.next.url }}" class="previous">&#x293a;Newer</a>
+      {% else %}
+        <span class="previous">&#x293a;Newer</span>
+      {% endif %}
+      {% if page.previous.url %}
+        <a href="{{ page.previous.url }}" class="next">Older&#x293b;</a>
+      {% else %}
+        <span class="next ">Older&#x293b;</span>
+      {% endif %}
+    </div>
+
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>

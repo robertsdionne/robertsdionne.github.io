@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  "Ported to Unity"
-description: "Over the weekend, I ported my game to Unity from C++11. I feel that Unity will let me
-iterate more quickly since it provides so much functionality."
 date:   2014-04-01 23:27:00
 tags: thesis
 ---

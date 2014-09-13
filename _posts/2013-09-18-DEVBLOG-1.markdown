@@ -1,9 +1,6 @@
 ---
 layout: post
 title:  "DEVBLOG #1"
-description: "I'm working on an interactive fiction engine and accompanying game set in the Rooftop
-Cop universe. Old text adventures, like Adventure, Zork and Planetfall, and new works of interactive
-fiction (IF), like Lost Pig and Galatea, fascinate me."
 date:   2013-09-18 21:55:00
 tags: thesis
 ---

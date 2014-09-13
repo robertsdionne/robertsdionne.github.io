@@ -1,9 +1,6 @@
 ---
 layout: post
 title:  "Reading and Writing Electronic Text: Final Project"
-description: "Reading Between the Lines with word2vec. Within the natural language processing
-research community, researchers are exploring new representations for words derived from statistical
-properties of texts."
 date:   2014-04-30 20:38:00
 tags: rwet
 ---

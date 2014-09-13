@@ -1,10 +1,6 @@
 ---
 layout: post
 title:  "Reading and Writing Electronic Text: Homework #1"
-description: "My personal goal for homework #1 was to be able to mutate a given text using n-gram
-statistics gathered from a set of onomatopoeias. Thus, I needed two components: one that gathered
-n-gram statistics from any text, and another that applied the given statistics to mutate a new
-text."
 date:   2014-02-12 22:34:00
 tags: rwet
 ---

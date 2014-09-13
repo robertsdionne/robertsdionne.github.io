@@ -1,10 +1,6 @@
 ---
 layout: post
 title:  "Demoed at Interactive Fiction Meeting"
-description: "I showed my thesis project at the NYC interactive fiction meeting to get some feedback
-from interactive fiction enthusiasts. The feedback contrasted with the types of advice I usually get
-from playtesters in that it had more to do with content and possible interactions than the text
-presentation of the game."
 date:   2014-04-21 16:38:00
 tags: thesis
 ---

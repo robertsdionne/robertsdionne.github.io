@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  "Reading and Writing Electronic Text: Homework #3"
-description: "My goal for homework #3 was to combine both homeworks #1 and #2 into a set of reusable
-classes."
 date:   2014-04-10 12:54:00
 tags: rwet
 ---

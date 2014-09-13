@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "DEVBLOG #2"
+description: "The past couple of weeks I've been programming a game engine and editor for my
+continuous interactive fiction prototype. The engine simultaneously displays the game state in two
+dimensions in a window with OpenGL and accepts input and displays output text on the command line."
+date:   2013-10-08 13:36:00
+categories: thesis
+---
+The past couple of weeks I've been programming a game engine and editor for my continuous
+interactive fiction prototype. The engine simultaneously displays the game state in two dimensions
+in a window with OpenGL and accepts input and displays output text on the command line. The final
+game will probably lack a two dimensional display, however I might play with the idea of keeping it.
+Currently, it's vital to allow editing of the game world, which occupies two dimensional space
+rather than a discrete logical space. Also, the game engine updates the game state in real-time, but
+the final game will update the game state progressively as the player requests more text to read
+with the scrollbar, mouse wheel or keyboard arrows.
+
+The editor allows the designer to build arbitrary two dimensional meshes out of triangles, which
+will provide sufficient complexity to construct a series of interior spaces, complete with rooms of
+varying shapes, hallways that twist and turn and different types of doors. The meshes will also
+support calculating shortest paths for AI pathfinding algorithms and visibility information, vital
+for player and non-player navigation and determining which elements of the game need to be narrated
+to the player based on what the player can see or hear. The editor supports moving, scaling and
+rotating of vertices, edges and triangles. It also supports creation of new triangles through
+extrusion or duplication, and deletion of existing triangles. The following images illustrate all of
+these editor actions. Completed designs may be saved and loaded to and from text files in the JSON
+format.
+
+My next tasks are to implement AI pathfinding to provide player navigation, add room labels and
+colors (for the editor display), add game items and non-player characters, and implement a prototype
+automatic narration system that describes the player moving about the interior spaces of the game
+world.

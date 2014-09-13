@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "DEVBLOG #1"
+description: "I'm working on an interactive fiction engine and accompanying game set in the Rooftop
+Cop universe. Old text adventures, like Adventure, Zork and Planetfall, and new works of interactive
+fiction (IF), like Lost Pig and Galatea, fascinate me."
+date:   2013-09-18 21:55:00
+categories: thesis
+---
+I'm working on an interactive fiction engine and accompanying game set in the Rooftop Cop universe.
+Old text adventures, like Adventure, Zork and Planetfall, and new works of interactive fiction (IF),
+like Lost Pig and Galatea, fascinate me. I want to teach myself to program the software systems
+these games require and explore what innovations I can bring to the playing field. Text-based games
+generate mysterious narratives that drive the player to see with the imagination yet they often
+require masterful wit to divine the solutions to designer-made puzzles. I want to experiment with
+new mechanics for interactive fiction, new interaction paradigms, that allow the player to explore a
+continuous space over short moments. My aim is to reduce some of the frustration new players
+experience by opening up the game mechanics beyond puzzles.
+
+This summer, Jonathan and I brainstormed some settings that would fit within the Rooftop Cop
+universe and would provide fertile ground for a continuous-space interactive fiction game without
+being over scope. We thought of five small settings: a hotel room, a bank, a public restroom, a
+prison cell and an elevator. I then sketched a few interactions within the elevator setting to
+create a short Twine prototype titled Elevator, available here. However, the final game will not use
+Twine since the tool produces hypertexts, a form strictly different from interactive fiction.
+
+I am exploring which tools to use to develop the final game. I have three possibilities: reuse an
+existing tool such as Emily Short's Versu (in closed beta) that already supports the continuous
+style of gameplay I would like in the game, modify an existing tool such as Graham Nelson's Inform 7
+or Nick Montfort's Curveship that doesn't yet support a continuous style or implement my own from
+scratch. As a programmer, I lean towards option three. I am reading Nick Montfort's papers about
+interactive fiction, examining the source code to software that runs IF, and reading research about
+natural language processing and natural language generation techniques. We'll find out which option
+I choose.

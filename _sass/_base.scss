@@ -21,7 +21,6 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
-    overflow-y: scroll;
 }
 
 
@@ -155,14 +154,12 @@ pre {
  * Wrapper
  */
 .wrapper {
-    background-color: $background-color;
     max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
     max-width:         calc(800px - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-    padding-top: $spacing-unit;
     @extend %clearfix;
 
     @include media-query($on-laptop) {

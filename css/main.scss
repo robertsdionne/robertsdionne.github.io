@@ -48,3 +48,25 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+body {
+    overflow-y: scroll;
+}
+
+.page-content {
+  background-image: $background-image;
+  background-size: cover;
+}
+
+.pagination {
+  float: left;
+}
+
+.rss-subscribe {
+  float: right;
+}
+
+.wrapper {
+  background-color: $background-color;
+  padding-top: $spacing-unit;
+}

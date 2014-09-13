@@ -10,6 +10,7 @@ url: "https://robertsdionne.github.io" # the base hostname & protocol for your s
 twitter_username: robertsdionne
 github_username:  robertsdionne
 encoding: utf-8
+paginate: 2
 
 # Build settings
 markdown: kramdown

@@ -8,6 +8,8 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://robertsdionne.github.io" # the base hostname & protocol for your site
 twitter_username: robertsdionne
+linkedin_username: robert-dionne/13/907/338
+linkedin_displayname: Robert Dionne
 github_username:  robertsdionne
 encoding: utf-8
 paginate: 2

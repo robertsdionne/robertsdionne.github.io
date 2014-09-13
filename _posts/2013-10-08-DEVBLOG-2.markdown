@@ -5,7 +5,7 @@ description: "The past couple of weeks I've been programming a game engine and e
 continuous interactive fiction prototype. The engine simultaneously displays the game state in two
 dimensions in a window with OpenGL and accepts input and displays output text on the command line."
 date:   2013-10-08 13:36:00
-categories: thesis
+tags: thesis
 ---
 The past couple of weeks I've been programming a game engine and editor for my continuous
 interactive fiction prototype. The engine simultaneously displays the game state in two dimensions

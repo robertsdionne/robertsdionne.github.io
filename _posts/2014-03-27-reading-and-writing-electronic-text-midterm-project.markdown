@@ -5,7 +5,7 @@ description: "My midterm project devises a new form of electronic poetry called 
 in which one finds an ancient, untranslated or untranslatable text and attempts to generate
 rhythmically plausible translations in another language: here English."
 date:   2014-03-27 16:20:00
-categories: rwet
+tags: rwet
 ---
 My midterm project devises a new form of electronic poetry called **dead language poetry** in which
 one finds an ancient, untranslated or untranslatable text and attempts to generate rhythmically

@@ -5,7 +5,7 @@ description: "Recently, I've been working on adding pathfinding and non-player c
 engine. As you can see in the previous two vine posts, rough implementations of these features are
 now in place."
 date:   2013-10-19 17:59:00
-categories: thesis
+tags: thesis
 ---
 Recently, I've been working on adding pathfinding and non-player characters to my text engine. As
 you can see in the previous two vine posts, rough implementations of these features are now in

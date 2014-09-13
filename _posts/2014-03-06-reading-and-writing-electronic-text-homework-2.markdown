@@ -5,7 +5,7 @@ description: "My goal for assignment #2 was to make a cut-up method that still c
 To create a flowing text, I employed two cut-up methods, one operating on lines and a second
 operating on tokens, to connect cut-up parts by matching starting and ending sounds."
 date:   2014-03-06 16:14:00
-categories: rwet
+tags: rwet
 ---
 My goal for assignment #2 was to make a cut-up method that still creates flowing text. To create a
 flowing text, I employed two cut-up methods, one operating on lines and a second operating on

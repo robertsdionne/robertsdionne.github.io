@@ -6,7 +6,7 @@ statistics gathered from a set of onomatopoeias. Thus, I needed two components: 
 n-gram statistics from any text, and another that applied the given statistics to mutate a new
 text."
 date:   2014-02-12 22:34:00
-categories: rwet
+tags: rwet
 ---
 My personal goal for homework #1 was to be able to mutate a given text using n-gram statistics
 gathered from a set of [onomatopoeias](http://en.wikipedia.org/wiki/Onomatopoeia). Thus, I needed

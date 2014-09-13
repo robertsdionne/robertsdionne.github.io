@@ -50,11 +50,11 @@ planes
 * add pre-processed and dynamic Voronoi shattering to these meshes
 
 Tonight, I stumbled upon a half-edge data structure implementation for Processing at
-[http://www.wblut.com/2010/05/04/hemesh-a-3d-mesh-library-for-processing](http://www.wblut.com/2010
+[www.wblut.com/2010/05/04/hemesh-a-3d-mesh-library-for-processing](http://www.wblut.com/2010
 /05/04/hemesh-a-3d-mesh-library-for-processing). I'm excited to explore this implementation to see
 if I want to incorporate any of its functionality into my fledgling library.
 
-I intend to read [http://www.gdmc.nl/publications/2007/Computing_3D_Voronoi_Diagram.pdf](http://www.
+I intend to read [www.gdmc.nl/publications/2007/Computing_3D_Voronoi_Diagram.pdf](http://www.
 gdmc.nl/publications/2007/Computing_3D_Voronoi_Diagram.pdf) and implement an efficient Delaunay
 triangulation algorithm to use in computing a 3-dimensional Voronoi diagram for real-time shattering
 effects. I also want to explore a naive implementation that slices a half-edge mesh by the bisector

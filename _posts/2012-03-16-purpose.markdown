@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "Purpose"
+date:   2012-03-16 03:41:27
+---
+I'm starting a blog to document my progress learning computer graphics, computational geometry,
+physical simulation and mathematics. I want to be able to look back on this blog several years in
+the future and be proud of my progress in these areas.
+
+Mathematics and computer simulation are my strongest passions but I am dissatisfied with the
+progress I've made during the last three years since starting a full-time job in the software
+industry. Most of my time at work is devoted to developing tools to test complex software systems.
+While it surely takes solid software development practices and lots of logic to test software
+effectively, it requires very little geometric or continuous mathematics -- something I dearly miss
+from my undergraduate studies.
+
+I recently attended the 2012 Game Developer Conference in San Francisco where I participated in the
+full-day mathematics and physics tutorials on Monday and Tuesday. These tutorials gave a taste of
+several general techniques that interest me applicable to real-time simulation for games:
+
+* dual numbers for efficient automatic differentiation of functions
+* dual quaternions for a compact representation of rigid-body transformations
+* support mappings for efficient collision detection of convex primitives using the
+Gilbert-Johnson-Keerthi distance algorithm
+* half-edge data structure for efficient manipulation of geometric mesh data
+* Voronoi shatter for physically simulated destruction of game environments
+
+Of the above techniques, I am already familiar with dual quaternions for rigid-body transformations,
+especially regarding skeletal animation skinning.
+
+I thought I would implement some of these other techniques. I immediately applied automatic
+differentiation to my signed-distance field raytracer to calculate the gradient of the distance
+field to provide a normal for the raytraced surfaces. Rather than use traditional dual numbers,
+numbers with a real component and a dual component, I used a slight variation with one real
+component and three orthogonal dual components, one for x, one for y and one for z. Thus, I was able
+to calculate the partial derivatives of the field in each of the three directions of space as an
+alternative to approximating the gradient with three symmetric finite differences. I'm still not
+sure whether the technique is more or less efficient, but I'll perform some measurements.
+
+I also began implementing a half-edge data structure for meshes for my C++ game engine, Dynamo. I
+used Google's Protocol Buffer library to describe the data layout. Protocol Buffers allow me to
+conveniently edit a text file representation of my data, yet package that same data into an
+efficient binary representation as needed. It also provides a convenient generated API to access and
+manipulate the binary data in memory. I have a couple goals for this effort:
+
+* add mesh modification capabilities such as face extrusion, subdivision, and slicing via cutting
+planes
+* add pre-processed and dynamic Voronoi shattering to these meshes
+
+Tonight, I stumbled upon a half-edge data structure implementation for Processing at
+[http://www.wblut.com/2010/05/04/hemesh-a-3d-mesh-library-for-processing](http://www.wblut.com/2010
+/05/04/hemesh-a-3d-mesh-library-for-processing). I'm excited to explore this implementation to see
+if I want to incorporate any of its functionality into my fledgling library.
+
+I intend to read [http://www.gdmc.nl/publications/2007/Computing_3D_Voronoi_Diagram.pdf](http://www.
+gdmc.nl/publications/2007/Computing_3D_Voronoi_Diagram.pdf) and implement an efficient Delaunay
+triangulation algorithm to use in computing a 3-dimensional Voronoi diagram for real-time shattering
+effects. I also want to explore a naive implementation that slices a half-edge mesh by the bisector
+planes between each point in the Voronoi point set, for comparison.
+
+Well, that's it for my first blog post. It's almost 4:00 am.

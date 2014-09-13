@@ -163,6 +163,8 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    background-image: $background-image;
+    background-size: cover;
 }
 
 .page-heading {

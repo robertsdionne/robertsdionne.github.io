@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "DEVBLOG #3"
+description: "Recently, I've been working on adding pathfinding and non-player characters to my text
+engine. As you can see in the previous two vine posts, rough implementations of these features are
+now in place."
+date:   2013-10-19 17:59:00
+categories: thesis
+---
+Recently, I've been working on adding pathfinding and non-player characters to my text engine. As
+you can see in the previous two vine posts, rough implementations of these features are now in
+place. The player can now type commands like "go to RoomA" or "walk to RoomH" to navigate between
+labeled rooms. Rooms that are labeled appear colored on the display. Right now, they do not have
+labels shown in the display since I need to import or implement text rendering functionality into
+the engine. The three non-player characters walk in sequence between each of the rooms and loop
+again when they reach the last.
+
+The walking pattern of the player and NPCs was a happy accident that emerged from the spacing of the
+triangular areas and the pathfinding algorithm. We project our intuition of human motion onto the
+simple shapes of the screen, as in this youtube video: [Experimental study of apparent behavior.
+Fritz Heider & Marianne Simmel. 1944.](http://www.youtube.com/watch?v=n9TWwG4SFWQ)
+
+Also, I swapped out the clunky command-line prompt for a browser-based version that uses [HTML5
+WebSockets](https://developer.mozilla.org/en-US/docs/WebSockets) and [libwebsockets](https://github.
+com/warmcat/libwebsockets). I feel that the fidelity that HTML will bring to the visual design of
+the text interface will greatly improve the player experience as I iterate on the design.
+
+Next steps:
+
+* Add items to the game.
+* Enable the player to control the player character through a subset of English that includes
+logical operations such as: "visit each room until you visit them all," "visit all the red rooms,"
+"go to the room with the wastebasket" and "follow the person wearing the hat."
+* Experiment with natural language generation code to descriptively narrate the passage of events so
+the player no longer needs to look at the display.
+* Remove the real-time component of gameplay so that the player advances time by scrolling the text
+display to generate more narrative.

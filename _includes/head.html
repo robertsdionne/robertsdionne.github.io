@@ -1,12 +1,52 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="shortcut icon" href="/favicon.png" type="image/png">
+  <script type="application/javascript">
+    var BACKGROUND_IMAGES = [
+      '/assets/arizona2.png',
+      '/assets/arizona5.png',
+      '/assets/books.png',
+      '/assets/iceland1.png',
+      '/assets/iceland2.png',
+      '/assets/iceland3.png',
+      '/assets/netherlands.png',
+      '/assets/netherlands2.png',
+      '/assets/nyc.png',
+      '/assets/rainroom4.png',
+      '/assets/school.png',
+      '/assets/skrillex.png'
+    ];
+    var dayOfYear = function() {
+      var now = new Date();
+      var start = new Date(now.getFullYear(), 0, 0);
+      return Math.floor((now - start) / (1000 * 60 * 60 * 24));
+    };
+    var selectBackgroundImage = function() {
+      return BACKGROUND_IMAGES[dayOfYear() % BACKGROUND_IMAGES.length];
+    };
+    var setBackgroundImage = function(image) {
+      var css = [
+        '.page-content {',
+        '  background-image: url(\'', image, '\');',
+        '}'
+      ].join('');
+      var style = document.createElement('style');
+      style.type = 'text/css';
+      if (style.styleSheet) {
+        style.styleSheet.cssText = css;
+      } else {
+        style.appendChild(document.createTextNode(css));
+      }
+      document.head.appendChild(style);
+    };
+    setBackgroundImage(selectBackgroundImage());
+  </script>
 </head>

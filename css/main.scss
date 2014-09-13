@@ -15,7 +15,6 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$background-image: url('/assets/netherlands2.png');
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -54,7 +53,6 @@ body {
 }
 
 .page-content {
-  background-image: $background-image;
   background-size: 100%;
 }
 
